@@ -83,7 +83,7 @@ button:active{
   
   .input:focus {
     border: 2px solid transparent;
-    color: #fff;
+    color: orange;
   }
   
   .containers .input:valid ~ .label,
