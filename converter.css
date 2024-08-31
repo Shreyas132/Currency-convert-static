@@ -1,0 +1,105 @@
+body{
+    background:url(bg.png);
+
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+
+}
+label,h1,p{
+    color: rgb(25, 25, 25);
+}
+select{
+    margin: 10px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: none;
+
+}
+button{
+    width: 80px;
+    margin-left: 40%;
+    height: 40px;
+    background-color: orangered;
+    border-style: none;
+    border-radius: 5px;
+    color: black;
+    transition: transform 0.3s ease;
+}
+button:hover{
+    box-shadow: -0.25rem 0.25rem grey;
+    transform: translate(0.25rem,-0.25rem);
+
+}
+button:active{
+    transform: translate(0);
+    box-shadow: none;
+}
+
+.container{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+               -15px -15px 30px rgb(60, 60, 60);
+}
+
+.containers {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    position: relative;
+    color: white;
+  }
+  
+  .containers .label {
+    font-size: 15px;
+    padding-left: 20px;
+    position: absolute;
+    top: 25px;
+    transition: 0.3s;
+    pointer-events: none;
+  }
+  
+  .input {
+    height: 40px;
+    margin: 10px;
+    border-style: none;
+    border-radius: 10px;
+    padding: 0px 7px;
+    color: black;
+    font-size: 15px;
+    background-color: whitesmoke;
+  }
+  
+  .input:focus {
+    border: 2px solid transparent;
+    color: #fff;
+  }
+  
+  .containers .input:valid ~ .label,
+  .containers .input:focus ~ .label {
+    transition: 0.3s;
+    padding-left: 2px;
+    transform: translateY(-35px);
+  }
+  .result h2{
+    color: orangered;
+    font-size: xx-large;
+  }
+  .result p{
+    color: white;
+    transition: color;
+    transition-duration: 400ms;
+    font-size: xx-large;
+  }
+  
